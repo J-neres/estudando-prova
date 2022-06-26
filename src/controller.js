@@ -7,7 +7,7 @@ const server = Router();
 
 
 server.get('/ping', (req, resp) => {
-    resp.send('pong');
+    resp.send('pong retornou');
 })
 
 server.get('/dobro/:numero', (req, resp) => {
@@ -32,7 +32,7 @@ server.get('/somar', (req,resp) => {
 })
 
 server.post('/somar', (req, resp) => {
-    
+
     const {um, dois} = req.body;
 
     const calc = um + dois ;
